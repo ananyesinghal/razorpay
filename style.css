@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Muli,BlinkMacSystemFont,-apple-system,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+h1 {
+    color: #0d2366;
+}
+
+h1:after{
+    content: '';
+    display: block;
+    width: 24px;
+    height: 4px;
+    background: #49dab5;
+    margin-top: 20px;
+}
+
+nav{
+    display: flex;
+    background-color: #02042b;
+    height: 60px;
+    width: 100%;
+}
+
+.container{
+    margin: 10px 20px 10px 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-logo{
+    height: 28px;
+}
+
+.container>ul{
+    display: flex;
+    align-items: center;
+}
+
+.container>ul>li{
+    justify-content: space-around;
+    color: #fff;
+    margin: 1rem;
+    text-decoration: none;
+    list-style: none;
+    font-size: 16px;
+}
+
+.container>img{
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: -6px;
+}
+
+.banner{
+    height: 80vh;
+    width: 100%;
+    background-color: #02042b;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+/* .banner:before{
+    position: relative;
+    content: '';
+    width: 230%;
+    height: 550px;
+    bottom: -90px;
+    left: 0;
+    background:  #02042b;
+    transform: skewY(5deg);
+}
+
+.banner:after{
+    position: relative;
+    content: '';
+    width: 70%;
+    height: 570px;
+    bottom: -90px;
+    left: 0;
+    background:  #02042b;
+    transform: skewY(-10deg);
+} */
+
+.banner-img{
+    height: 90%;
+    margin-left: 220px;
+}
+
+.banner-img>img{
+    height: 560px;
+    justify-self: center;
+    align-items: center;
+}
+
+.banner-info{
+    height: 90%;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    margin-left: 100px;
+}
+
+.banner-info>h1 {
+    color: #fff;
+    font-size: 40px;
+    line-height: 53px;
+}
+
+.banner-info>h1:after {
+    margin-top: 30px;
+}
+
+
+.banner-info>p{
+    font-size: 18px;
+    margin-bottom: 32px;
+    max-width: 430px;
+    color: rgba(214,219,241,0.9);
+    margin-top: 30px;
+    line-height: 30px;
+}
+
+.signup-btn{
+    width: 140px;
+    height: 50px;
+    font-size: 16px;
+    background-color: #528ff0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.signup-btn:hover{
+    background-color: #3571d3;
+}
+
+.payment-products {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.section-title{
+    font-size: 24px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-title:after{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.payment-products-cards {
+    display: flex;
+    margin: 40px;
+}
+
+.card {
+    background-color: #04093f;
+    background-repeat: no-repeat;
+    background-position-x: 123px;
+    background-position-y: top;
+    height: auto;
+    width: auto;
+    max-width: 280px;
+    margin: 30px;
+    margin-top: 10px;
+    border-radius: 6px;
+    color: white;
+    padding: 20px;
+    padding-left: 26px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+    transform-origin: center;
+}
+
+.card:hover {
+    transform: scale(1.05,1.05);
+}
+
+.card>h1{
+    color: white;
+    font-size: 28px;
+    margin-top: 140px;
+}
+
+.card>h1:after{
+    height: 0px;
+}
+
+.card>p{
+    color: rgba(214,219,241,0.9);
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.card>a{
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.accept-payments {
+    background-image: url('./assets/accept-payments-bg.svg');
+    background-repeat: no-repeat;
+    background-size: 200px;
+}
+
+.accept-payments:hover{
+    background-image: url(./assets/accept-payments-dark-bg.svg) !important;
+}
+
+.razorpayx {
+    background-image: url('./assets/x-bg.svg');
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position-x: 40px;
+}
+
+.razorpayx:hover{
+    background-image: url(./assets/x-dark-bg.svg) !important;
+}
+
+.razorpay-capital {
+    background-image: url('./assets/capital-bg.svg');
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position-x: 40px;
+}
+
+
+.razorpay-capital:hover{
+    background-image: url(./assets/capital-dark-bg.svg) !important;
+}
