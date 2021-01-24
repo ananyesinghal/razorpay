@@ -327,7 +327,8 @@ nav{
 
 .products-new-cards h1{
     color: #0d2366;
-    margin-top: 100px;
+    margin-top: 120px;
+    font-size: 24px;
 }
 
 .products-new-cards p{
@@ -347,6 +348,8 @@ nav{
     }
     .products-new-cards>.section-title {
         font-size: 40px;
+        margin-top: 20px;
+        margin-bottom: 40px;
     }
 }
 
