@@ -168,6 +168,7 @@ nav{
     position: relative;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     margin-top: 40px;
 }
@@ -184,6 +185,7 @@ nav{
 .payment-products-cards {
     display: flex;
     margin-top: 40px;
+    flex-wrap: wrap;
 }
 
 @media only screen and (max-width: 900px) {
@@ -199,7 +201,8 @@ nav{
     background-position-y: top;
     height: auto;
     width: auto;
-    max-width: 280px;
+    width: 280px;
+    min-width: 280px;
     margin: 30px;
     margin-top: 10px;
     border-radius: 6px;
@@ -284,4 +287,104 @@ nav{
     .razorpay-capital{
         background-image: url(./assets/capital-dark-bg.svg);
     }
+}
+
+.products-new{
+    padding: 100px;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+    background-color: #02042b;
+}
+
+.products-new-cards {
+    display: flex;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.products-new-cards>.section-title{
+    font-size: 50px;
+    margin-right: 170px;
+    color: white;
+}
+
+.products-new-cards>.section-title:after {
+    display: none;
+}
+
+.products-new-cards>div {
+    background-color: white;
+    height: 320px;
+}
+
+.products-new-cards h1{
+    color: #0d2366;
+    margin-top: 100px;
+}
+
+.products-new-cards p{
+    color: #0d2366;
+}
+
+.products-new-cards a{
+    color: #3571d3;
+}
+
+.upi {
+    background-image: url('./assets/upi-autopay-bg-1.svg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.upi:hover{
+    background-image: url(./assets/upi-autopay-hover.svg) !important;
+}
+
+.pay-btn {
+    background-image: url('./assets/payment-buttons-bg-1.svg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.pay-btn:hover{
+    background-image: url(./assets/payment-buttons-hover.svg) !important;
+}
+
+.cred-pay {
+    background-image: url('./assets/paper-nach-bg-1.svg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+
+.cred-pay:hover{
+    background-image: url(./assets/paper-nach-hover.svg) !important;
+}
+
+.thirdwatch {
+    background-image: url('./assets/thirdwatch-bg-1.svg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+
+.thirdwatch:hover{
+    background-image: url(./assets/thirdwatch-hover.svg) !important;
+}
+
+.unreg {
+    background-image: url('./assets/unregistered-bg-1.svg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+
+.unreg:hover{
+    background-image: url(./assets/unregistered-hover.svg) !important;
 }
